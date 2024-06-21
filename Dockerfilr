@@ -1,0 +1,3 @@
+FROM http
+COPY ./var/lib/jenkins/workspace/html/index.html /usr/share/nginx/html
+CMD ["nginx", "-g", "daemon off;"]
